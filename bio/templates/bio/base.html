@@ -1,12 +1,43 @@
-
 <!DOCTYPE html>
-    <html lang="en">
-        <link href="https://fonts.googleapis.com/css?family=Cookie|Great+Vibes|Lobster|Poiret+One|Quicksand&display=swap" rel="stylesheet"/>
-        <head class="pageTitle">
-            <meta charset="utf-8" />
-            <title>Becky G Fan Page</title>
-        </head>
-        <body>
-             {% block base %}{% endblock %}
-        </body>
-    </html>
+<html lang="en">
+<link href="https://fonts.googleapis.com/css?family=Cookie|Great+Vibes|Lobster|Poiret+One|Quicksand&display=swap"
+  rel="stylesheet" />
+
+<head>
+  {% if title %}
+  <title>BeckyG - {{ title }}</title>
+  {% else %}
+  <title>BeckyG</title>
+  {% endif %}
+</head>
+
+<body>
+  {% load static %}
+  {% block top %}
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+  <section id="top-section">
+    <div>
+      <a href="">
+        <img href="" src="{% static 'resources/images/beckyg8.jpg' %}" alt="icon" class="icon">
+        <img src="{% static 'resources/images/beckyg-logo.png' %}" alt="logo" class="logo">
+      </a>
+      <nav>
+        <ul>
+          {% block nav %}{% endblock nav %}
+        </ul>
+      </nav>
+    </div>
+  </section>
+  {% endblock top %}
+
+  {% block base %}{% endblock %}
+</body>
+
+</html>
+
+<!-- 
+   <li><a href="">home</a></li>
+                  <li><a href="#">Music</a></li>
+                  <li><a href="#">Merch</a></li>
+                  <li><a href="about/">About</a></li>
+ -->

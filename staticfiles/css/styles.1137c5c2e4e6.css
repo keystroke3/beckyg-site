@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    /* padding: 0; */
+    box-sizing: border-box;
+}
+
+.image {
+    border: 1px transparent;
+    border-radius: 10px;
+    /* padding: 10px; */
+    padding-right: 30px;
+    width: 40%;
+    display: inline-block;
+    vertical-align: middle;
+    }   
+    /* img:hover {
+    box-shadow: 0 0 2px 1px rgba(243, 247, 3, 0.5);
+    } */
+
+.icon{
+
+    border-radius: 50%;
+    width: 6.5%;
+    white-space: pre;
+    border-style: solid;
+    border-color: yellow;
+    border-width: 5px;
+    margin: 15px;
+    float: left;
+    position: relative;
+    }
+    .icon:hover {
+    box-shadow: 0 0 3px 4px aqua;
+    cursor: pointer;
+}
+
+.logo{
+    width: 15%;
+    margin-right: 130px;
+    /* right: 500px; */
+}
+
+.pageTitle {
+    /* background-color: black; */
+    color: white; 
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 50px;
+    color: yellow;
+    display: inline;
+}
+.text {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+
+/* ########### lists ############# */
+
+ul {
+list-style-type: none;
+margin: 0;
+overflow: hidden;
+align-items: left;
+background-color: transparent;
+}
+
+li {
+float: right;
+}
+  
+li a {
+/* display: block; */
+object-position: 0%;
+color: yellow;
+text-align: center;
+padding: 16px;
+text-decoration: none;
+}
+  
+  li a:hover {
+    background-color: #111111;
+  }
+  
+
+
+
+
+/* ################## SECTIONS ################## */
+
+#top-section{
+    background-color: #333333;
+}
+
+
+
+/* ############################################ */
+
+
+h2 {
+    font-family: 'Great Vibes', cursive;
+    color: aqua;
+}
+
+h3 {
+    font-family: 'Cookie', cursive;
+    font-size: 40px;
+    text-align: center;
+    color: aqua;
+    padding: 3%;
+}
+body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-image: url("../resources/images/beckyg6.11000f63f06e.jpg");
+    background-size: cover;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px rgb(12, 12, 12);
+    text-align: center;
+    
+}
+p {
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: justify;
+    display: flow-root;
+    /* flex-wrap: wrap-reverse; */
+}
+
