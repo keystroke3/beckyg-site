@@ -124,7 +124,7 @@ STATIC_URL = '/static/'
 #static files not working
 # STATICFILES_DIRS = [os.path.join(os.environ['HOME'], 'beckyg/bio/templates/bio/static')]
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'bio/templates/bio/static'),
+    os.path.join(BASE_DIR, 'bio/static'),
 )
 # Activate Django-Heroku.
 # django_heroku.settings(locals())
